@@ -30,7 +30,7 @@
         {
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pbRemover = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblPts = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,11 +44,11 @@
             this.txtPontos = new System.Windows.Forms.TextBox();
             this.txtObservacao = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnAdicionar = new System.Windows.Forms.Button();
-            this.btnRemover = new System.Windows.Forms.Button();
+            this.pbAdicionar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRemover)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdicionar)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -74,13 +74,16 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox3
+            // pbRemover
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(688, 388);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.pbRemover.BackColor = System.Drawing.Color.Transparent;
+            this.pbRemover.Image = global::EAK.APP.Properties.Resources.Imagem2;
+            this.pbRemover.Location = new System.Drawing.Point(336, 379);
+            this.pbRemover.Name = "pbRemover";
+            this.pbRemover.Size = new System.Drawing.Size(72, 50);
+            this.pbRemover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRemover.TabIndex = 3;
+            this.pbRemover.TabStop = false;
             // 
             // label1
             // 
@@ -214,29 +217,16 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Observação";
             // 
-            // btnAdicionar
+            // pbAdicionar
             // 
-            this.btnAdicionar.BackColor = System.Drawing.Color.Lime;
-            this.btnAdicionar.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionar.ForeColor = System.Drawing.Color.White;
-            this.btnAdicionar.Location = new System.Drawing.Point(230, 388);
-            this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(95, 32);
-            this.btnAdicionar.TabIndex = 17;
-            this.btnAdicionar.Text = "Adicionar";
-            this.btnAdicionar.UseVisualStyleBackColor = false;
-            // 
-            // btnRemover
-            // 
-            this.btnRemover.BackColor = System.Drawing.Color.Red;
-            this.btnRemover.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemover.ForeColor = System.Drawing.Color.White;
-            this.btnRemover.Location = new System.Drawing.Point(336, 388);
-            this.btnRemover.Name = "btnRemover";
-            this.btnRemover.Size = new System.Drawing.Size(95, 32);
-            this.btnRemover.TabIndex = 18;
-            this.btnRemover.Text = "Remover";
-            this.btnRemover.UseVisualStyleBackColor = false;
+            this.pbAdicionar.BackColor = System.Drawing.Color.Transparent;
+            this.pbAdicionar.Image = global::EAK.APP.Properties.Resources.Imagem3;
+            this.pbAdicionar.Location = new System.Drawing.Point(253, 379);
+            this.pbAdicionar.Name = "pbAdicionar";
+            this.pbAdicionar.Size = new System.Drawing.Size(72, 50);
+            this.pbAdicionar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAdicionar.TabIndex = 17;
+            this.pbAdicionar.TabStop = false;
             // 
             // Form1
             // 
@@ -244,8 +234,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EAK.APP.Properties.Resources.feltros_feltro_santa_fe_liso_azul_babe_28093__p_1548604992201;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnRemover);
-            this.Controls.Add(this.btnAdicionar);
+            this.Controls.Add(this.pbAdicionar);
             this.Controls.Add(this.txtObservacao);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtPontos);
@@ -259,7 +248,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblPts);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pbRemover);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -268,7 +257,8 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRemover)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdicionar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,7 +267,7 @@
         #endregion
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbRemover;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblPts;
         private System.Windows.Forms.Label label3;
@@ -291,8 +281,7 @@
         private System.Windows.Forms.TextBox txtPontos;
         private System.Windows.Forms.TextBox txtObservacao;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnAdicionar;
-        private System.Windows.Forms.Button btnRemover;
+        private System.Windows.Forms.PictureBox pbAdicionar;
     }
 }
 

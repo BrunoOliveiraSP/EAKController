@@ -63,6 +63,16 @@ namespace EAK.APP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _73_512 {
+            get {
+                object obj = ResourceManager.GetObject("73-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap feltros_feltro_santa_fe_liso_azul_babe_28093__p_1548604992201 {
             get {
                 object obj = ResourceManager.GetObject("feltros-feltro-santa-fe-liso-azul-babe-28093--p-1548604992201", resourceCulture);
@@ -76,6 +86,26 @@ namespace EAK.APP.Properties {
         internal static System.Drawing.Bitmap Imagem1 {
             get {
                 object obj = ResourceManager.GetObject("Imagem1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagem2 {
+            get {
+                object obj = ResourceManager.GetObject("Imagem2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagem3 {
+            get {
+                object obj = ResourceManager.GetObject("Imagem3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
