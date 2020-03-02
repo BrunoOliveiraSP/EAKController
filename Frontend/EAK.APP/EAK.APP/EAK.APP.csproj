@@ -46,16 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Business\EakBusinnes.cs" />
+    <Compile Include="Database\EakDatabase.cs" />
+    <Compile Include="Telas\frmAddRemoverPontos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Telas\frmAddRemoverPontos.Designer.cs">
+      <DependentUpon>frmAddRemoverPontos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Telas\frmEscolhaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmEscolhaLogin.Designer.cs">
+      <DependentUpon>frmEscolhaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmLoginAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmLoginAluno.Designer.cs">
+      <DependentUpon>frmLoginAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmLoginProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmLoginProfessor.Designer.cs">
+      <DependentUpon>frmLoginProfessor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Telas\frmAddRemoverPontos.resx">
+      <DependentUpon>frmAddRemoverPontos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -67,6 +87,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Telas\frmEscolhaLogin.resx">
+      <DependentUpon>frmEscolhaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmLoginAluno.resx">
+      <DependentUpon>frmLoginAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmLoginProfessor.resx">
+      <DependentUpon>frmLoginProfessor.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,6 +129,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagem3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recession %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\043-profit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profit.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voltar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avançar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
