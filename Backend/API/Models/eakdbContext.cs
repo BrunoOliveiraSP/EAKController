@@ -135,10 +135,18 @@ namespace API.Models
                 entity.HasIndex(e => e.IdAluno)
                     .HasName("id_aluno");
 
+                entity.HasIndex(e => e.IdSerie)
+                    .HasName("tb_serie_auno_ibfk_1_idx");
+
                 entity.HasOne(d => d.IdAlunoNavigation)
                     .WithMany(p => p.TbSerieAluno)
                     .HasForeignKey(d => d.IdAluno)
                     .HasConstraintName("tb_serie_aluno_ibfk_1");
+
+                entity.HasOne(d => d.IdSerieNavigation)
+                    .WithMany(p => p.TbSerieAluno)
+                    .HasForeignKey(d => d.IdSerie)
+                    .HasConstraintName("tb_serie_auno_ibfk_1");
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -15,6 +15,8 @@ namespace API.Models
 
         [Column("id_aluno")]
         public int? IdAluno { get; set; }
+        [Column("id_serie")]
+        public int? IdSerie { get; set; }
         [Key]
         [Column("id_serie_aluno")]
         public int IdSerieAluno { get; set; }
@@ -26,6 +28,9 @@ namespace API.Models
         [ForeignKey(nameof(IdAluno))]
         [InverseProperty(nameof(TbAluno.TbSerieAluno))]
         public virtual TbAluno IdAlunoNavigation { get; set; }
+        [ForeignKey(nameof(IdSerie))]
+        [InverseProperty(nameof(TbSerie.TbSerieAluno))]
+        public virtual TbSerie IdSerieNavigation { get; set; }
         [InverseProperty("IdSerieAlunoNavigation")]
         public virtual ICollection<TbPonto> TbPonto { get; set; }
     }

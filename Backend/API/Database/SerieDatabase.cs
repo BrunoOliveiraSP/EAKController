@@ -27,6 +27,7 @@ namespace API.Database
             Models.TbSerie alterado = db.TbSerie.FirstOrDefault(x => x.IdSerie == serie.IdSerie);
             alterado.NmSerie = serie.NmSerie;
             alterado.TpPeriodo = serie.TpPeriodo;
+            db.SaveChanges();
         }
 
         public void Remover(int id)
