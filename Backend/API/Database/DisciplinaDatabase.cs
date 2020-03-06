@@ -7,31 +7,55 @@ namespace API.Database
 {
     public class DisciplinaDatabase
     {
-        // Models.eakdbContext db = new Models.eakdbContext();
+        Models.eakdbContext db = new Models.eakdbContext();
 
-        // public void Inserir(Models.TbDisciplina disciplina)
-        // {
-        //     db.TbDisciplina.Add(disciplina);
-        //     db.SaveChanges();
-        // }
+        public void Inserir(Models.TbDisciplina disciplina)
+        {
+            db.TbDisciplina.Add(disciplina);
+            db.SaveChanges();
+        }
+        public List<Models.TbDisciplina> Consultar(string nome)
+        {
+            List<Models.TbDisciplina> lista = null;
 
-        // public List<Models.TbDisciplina> Consultar(string nome)
-        // {
-        //     List<Models.TbDisciplina> lista = db.TbDisciplina.Where(t=> t.NmDisciplina == nome).ToList();
-        //     return lista;
-        // }
+            lista = db.TbDisciplina
+                      .Where(a => a.NmDisciplina == nome)
+                      .ToList();
 
-        // public void Deletar(int id)
-        // {
-        //     db.TbDisciplina.Remove(db.TbDisciplina.FirstOrDefault(t=> t.IdDisciplina == id));
-        //     db.SaveChanges();
-        // }
+            return lista;
+        }
+        public List<Models.TbDisciplina> ListarTodos()
+        {
+            List<Models.TbDisciplina> lista = null;
+            
+            lista = db.TbDisciplina
+                      .ToList();
 
-        // public void Alterar(Models.TbDisciplina disciplina)
-        // {
-        //     Models.TbDisciplina novo = db.TbDisciplina.FirstOrDefault(t=> t.IdDisciplina == disciplina.IdDisciplina);
-        //     novo.NmDisciplina = disciplina.NmDisciplina;
-        //     db.SaveChanges();
-        // }
+            return lista;
+        }
+        public void Alterar(Models.TbDisciplina disciplina)
+        {
+            Models.TbDisciplina novo= null;
+
+            novo= db.TbDisciplina
+                    .FirstOrDefault(a => a.IdDisciplina == disciplina.IdDisciplina);
+
+            novo.NmDisciplina = disciplina.NmDisciplina;
+
+            db.SaveChanges();
+
+        }
+        public void Deletar (int id)
+        {
+            Models.TbDisciplina del = null;
+
+            del = db.TbDisciplina
+                    .FirstOrDefault(a => a.IdDisciplina == id);
+
+            db.TbDisciplina.Remove(del);
+
+            db.SaveChanges();
+        }
+
     }
 }
