@@ -25,13 +25,23 @@ namespace API.Database
 
         public List <Models.TbAluno> Consulta(string nome)
         {
-            List<Models.TbAluno> alunos = db.TbAluno.Where (x => x.NmAluno.Contains(nome)).ToList();
+            List<Models.TbAluno> alunos = db.TbAluno
+                                            .Where (x => x.NmAluno.Contains(nome))
+                                            .ToList();
             return alunos; 
+        }
+
+        public Models.TbAluno Consulta(int id)
+        {
+            Models.TbAluno aluno = db.TbAluno
+                                     .FirstOrDefault (x => x.IdAluno == id);
+            return aluno; 
         }
 
         public void Alterar(Models.TbAluno aluno)
         {
-            Models.TbAluno alterado = db.TbAluno.FirstOrDefault(x => x.IdAluno == aluno.IdAluno);
+            Models.TbAluno alterado = db.TbAluno
+                                        .FirstOrDefault(x => x.IdAluno == aluno.IdAluno);
             alterado.NmAluno = aluno.NmAluno;
             alterado.DsEmail = aluno.DsEmail;
             alterado.DsSenha = aluno.DsSenha;
@@ -41,7 +51,8 @@ namespace API.Database
 
         public void Remover(int id)
         {
-            Models.TbAluno remover = db.TbAluno.FirstOrDefault(x => x.IdAluno == id);
+            Models.TbAluno remover = db.TbAluno
+                                       .FirstOrDefault(x => x.IdAluno == id);
 
             db.TbAluno.Remove(remover);
             db.SaveChanges();

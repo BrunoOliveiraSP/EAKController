@@ -18,13 +18,23 @@ namespace API.Database
 
         public List<Models.TbSerie> ListarTodas()
         {
-            List<Models.TbSerie> series = db.TbSerie.ToList();
+            List<Models.TbSerie> series = db.TbSerie
+                                            .ToList();
             return series;
+        }
+
+         public Models.TbSerie Consulta(int id)
+        {
+            Models.TbSerie serie = db.TbSerie
+                                     .FirstOrDefault (x => x.IdSerie == id);
+            return serie; 
         }
 
         public void Alterar(Models.TbSerie serie)
         {
-            Models.TbSerie alterado = db.TbSerie.FirstOrDefault(x => x.IdSerie == serie.IdSerie);
+            Models.TbSerie alterado = db.TbSerie
+                                        .FirstOrDefault(x => x.IdSerie == serie
+                                                              .IdSerie);
             alterado.NmSerie = serie.NmSerie;
             alterado.TpPeriodo = serie.TpPeriodo;
             db.SaveChanges();
@@ -32,7 +42,8 @@ namespace API.Database
 
         public void Remover(int id)
         {
-            Models.TbSerie remover = db.TbSerie.FirstOrDefault(x => x.IdSerie == id);
+            Models.TbSerie remover = db.TbSerie
+                                       .FirstOrDefault(x => x.IdSerie == id);
 
             db.TbSerie.Remove(remover);
             db.SaveChanges();
