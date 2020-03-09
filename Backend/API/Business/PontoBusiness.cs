@@ -11,9 +11,11 @@ namespace API.Business
         public void Inserir(Models.TbPonto ponto)
         {
             if(ponto.DsObservacao.Trim() == null)
-            {
                 throw new ArgumentException("A observação é obrigatória");
-            }
+            if(ponto.IdSerieAluno <=0)
+                throw new ArgumentException("Esse Serie Aluno não existw");
+            if(ponto.IdProfessor<=0)
+                throw new ArgumentException("Esse Professor não existe");
 
             db.Inserir(ponto);
         }
@@ -27,10 +29,11 @@ namespace API.Business
         public void Alterar(Models.TbPonto ponto)
         {
             if(ponto.DsObservacao.Trim() == null)
-            {
                 throw new ArgumentException("A observação é obrigatória");
-            }
-
+            if(ponto.IdSerieAluno <=0)
+                throw new ArgumentException("Esse Serie Aluno não existw");
+            if(ponto.IdProfessor<=0)
+                throw new ArgumentException("Esse Professor não existe");
             db.Alterar(ponto);
         }
         public List<Models.TbPonto> ListarTodos()
