@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Business\EakBusinnes.cs" />
     <Compile Include="Database\EakDatabase.cs" />
+    <Compile Include="Models\AlunoModel.cs" />
     <Compile Include="Telas\frmAddRemoverPontos.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -66,11 +66,12 @@
             // 
             this.btnAvancar.BackColor = System.Drawing.Color.Transparent;
             this.btnAvancar.Image = global::EAK.APP.Properties.Resources.avançar;
-            this.btnAvancar.Location = new System.Drawing.Point(262, 300);
+            this.btnAvancar.Location = new System.Drawing.Point(262, 297);
             this.btnAvancar.Name = "btnAvancar";
-            this.btnAvancar.Size = new System.Drawing.Size(89, 85);
+            this.btnAvancar.Size = new System.Drawing.Size(98, 88);
             this.btnAvancar.TabIndex = 39;
             this.btnAvancar.TabStop = false;
+            this.btnAvancar.Click += new System.EventHandler(this.btnAvancar_Click);
             // 
             // label3
             // 
