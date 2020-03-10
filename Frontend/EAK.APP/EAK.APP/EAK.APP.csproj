@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,9 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\DisciplinaApi.cs" />
+    <Compile Include="API\ProfessorApi.cs" />
     <Compile Include="Business\EakBusinnes.cs" />
     <Compile Include="Database\EakDatabase.cs" />
     <Compile Include="Models\AlunoModel.cs" />
+    <Compile Include="Models\DisciplinaModel.cs" />
+    <Compile Include="Models\ProfessorModel.cs" />
     <Compile Include="Telas\frmAddRemoverPontos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +104,7 @@
     <EmbeddedResource Include="Telas\frmLoginProfessor.resx">
       <DependentUpon>frmLoginProfessor.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -140,7 +148,6 @@
   <ItemGroup>
     <None Include="Resources\profit.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\teacher.png" />
   </ItemGroup>
