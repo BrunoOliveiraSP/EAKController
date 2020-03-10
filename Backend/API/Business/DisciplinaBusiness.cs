@@ -12,7 +12,7 @@ namespace API.Business
 
         public void Inserir(Models.TbDisciplina disciplina)
         {
-            if(disciplina.NmDisciplina.Trim()==null)
+            if(disciplina.NmDisciplina.Trim()=="")
                 throw new ArgumentException("O Nome é obrigatório");
             
             database.Inserir(disciplina);
@@ -21,7 +21,7 @@ namespace API.Business
         {
             List<Models.TbDisciplina> lista = null;
 
-            if(nome.Trim() == null)
+            if(nome.Trim() == "")
                throw new ArgumentException("O Nome é obrigatório");
             
             lista = database.Consultar(nome);
@@ -38,7 +38,7 @@ namespace API.Business
         } 
         public void Alterar(Models.TbDisciplina disciplina)
         {
-             if(disciplina.NmDisciplina.Trim()==null)
+             if(disciplina.NmDisciplina.Trim()=="")
                 throw new ArgumentException("O Nome é obrigatório");
             
             database.Alterar(disciplina);

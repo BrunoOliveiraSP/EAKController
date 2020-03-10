@@ -11,13 +11,13 @@ namespace API.Business
 
         public void Inserir(Models.TbProfessor professor)
         {
-            if(professor.NmProfessor.Trim() == null)
+            if(professor.NmProfessor.Trim() == "")
                 throw new ArgumentException ("Nome é obrigatório");
             if(professor.DsEmail.Contains("@")== false) 
                 throw new ArgumentException("Email invalido");
-            if(professor.DsEmail.Trim() == null)
+            if(professor.DsEmail.Trim() == "")
                 throw new ArgumentException("Email é obrigatório");
-            if(professor.DsSenha.Trim() == null)
+            if(professor.DsSenha.Trim() == "")
                 throw new ArgumentException("A Senha é obrigatória");
             else 
                 database.Inserir(professor);
@@ -45,13 +45,13 @@ namespace API.Business
         }
         public void Alterar (Models.TbProfessor professor)
         {
-            if(professor.NmProfessor.Trim() == null)
+            if(professor.NmProfessor.Trim() == "")
                 throw new ArgumentException ("Nome é obrigatório");
             if(professor.DsEmail.Contains("@")== false) 
                 throw new ArgumentException("Email invalido");
-            if(professor.DsEmail.Trim() == null)
+            if(professor.DsEmail.Trim() == "")
                 throw new ArgumentException("Email é obrigatório");
-            if(professor.DsSenha.Trim() == null)
+            if(professor.DsSenha.Trim() == "")
                 throw new ArgumentException("A Senha é obrigatória");
             else 
                 database.Alterar(professor);
