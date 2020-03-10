@@ -16,5 +16,26 @@ namespace EAK.APP.Telas
         {
             InitializeComponent();
         }
+
+        private void btnAvancar_Click(object sender, EventArgs e)
+        {
+            Models.AlunoModel aluno = new Models.AlunoModel();
+            aluno.DsEmail = txtUsuario.Text;
+            aluno.DsSenha = txtSenha.Text;
+
+            string email = aluno.DsEmail;
+            string senha = aluno.DsSenha;
+            //try
+            //{
+            //    if (email == null)
+            //    {
+            //
+            //    }
+            //}
+            //catch(System.Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+        }
     }
 }

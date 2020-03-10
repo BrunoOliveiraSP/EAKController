@@ -16,5 +16,30 @@ namespace EAK.APP.Telas
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            frmLoginAluno tela = new frmLoginAluno();
+            tela.Show();
+
+            this.Close();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            frmLoginProfessor tela = new frmLoginProfessor();
+            tela.Show();
+            this.Close();
+        }
     }
 }
