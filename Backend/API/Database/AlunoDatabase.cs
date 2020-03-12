@@ -19,14 +19,16 @@ namespace API.Database
 
         public List <Models.TbAluno> ListarTodos()
         {
-            List<Models.TbAluno> alunos = db.TbAluno.ToList();
+            List<Models.TbAluno> alunos = db.TbAluno
+                                            .ToList();
             return alunos;
         }
 
         public List <Models.TbAluno> Consulta(string nome)
         {
             List<Models.TbAluno> alunos = db.TbAluno
-                                            .Where (x => x.NmAluno.Contains(nome))
+                                            .Where (x => x.NmAluno
+                                            .Contains(nome))
                                             .ToList();
             return alunos; 
         }

@@ -10,10 +10,10 @@ namespace API.Business
         Database.PontoDatabase db = new Database.PontoDatabase();
         public void Inserir(Models.TbPonto ponto)
         {
-            if(ponto.DsObservacao.Trim() == null)
+            if(ponto.DsObservacao.Trim() == "")
                 throw new ArgumentException("A observação é obrigatória");
             if(ponto.IdSerieAluno <=0)
-                throw new ArgumentException("Esse Serie Aluno não existw");
+                throw new ArgumentException("Esse Serie Aluno não existe");
             if(ponto.IdProfessor<=0)
                 throw new ArgumentException("Esse Professor não existe");
 
@@ -28,7 +28,7 @@ namespace API.Business
         }
         public void Alterar(Models.TbPonto ponto)
         {
-            if(ponto.DsObservacao.Trim() == null)
+            if(ponto.DsObservacao.Trim() == "")
                 throw new ArgumentException("A observação é obrigatória");
             if(ponto.IdSerieAluno <=0)
                 throw new ArgumentException("Esse Serie Aluno não existw");
