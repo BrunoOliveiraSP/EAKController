@@ -35,6 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -45,6 +46,7 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::EAK.APP.Properties.Resources.feltros_feltro_santa_fe_liso_azul_babe_28093__p_1548604992201;
+            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -129,6 +131,16 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BackgroundImage = global::EAK.APP.Properties.Resources.eak2;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Location = new System.Drawing.Point(539, 384);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(86, 66);
+            this.panel8.TabIndex = 42;
+            // 
             // frmEscolhaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -158,5 +170,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel8;
     }
 }

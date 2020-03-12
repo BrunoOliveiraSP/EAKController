@@ -19,23 +19,28 @@ namespace EAK.APP.Telas
 
         private void btnAvancar_Click(object sender, EventArgs e)
         {
+            try
+            {  
             Models.AlunoModel aluno = new Models.AlunoModel();
             aluno.DsEmail = txtUsuario.Text;
             aluno.DsSenha = txtSenha.Text;
 
             string email = aluno.DsEmail;
             string senha = aluno.DsSenha;
-            //try
-            //{
-            //    if (email == null)
-            //    {
-            //
-            //    }
-            //}
-            //catch(System.Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            
+                if (email == null)
+                {
+                    throw new ArgumentException("E-mail inválido!!");
+                }
+                if(senha == null)
+                {
+                    throw new ArgumentException("Senha inválido!!");
+                }
+            }
+            catch(System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

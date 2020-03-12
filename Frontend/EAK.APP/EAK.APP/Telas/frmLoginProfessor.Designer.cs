@@ -38,6 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAvancar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -48,6 +49,7 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::EAK.APP.Properties.Resources.feltros_feltro_santa_fe_liso_azul_babe_28093__p_1548604992201;
+            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.btnAvancar);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -156,6 +158,16 @@
             this.pictureBox6.TabIndex = 22;
             this.pictureBox6.TabStop = false;
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BackgroundImage = global::EAK.APP.Properties.Resources.eak2;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Location = new System.Drawing.Point(535, 379);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(89, 67);
+            this.panel8.TabIndex = 42;
+            // 
             // frmLoginProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -188,5 +200,6 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel8;
     }
 }

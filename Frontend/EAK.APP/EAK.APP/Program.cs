@@ -16,7 +16,7 @@ namespace EAK.APP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Telas.frmEscolhaLogin());
+            Application.Run(new Telas.frmConsultarPontuacoes());
         }
     }
 }
