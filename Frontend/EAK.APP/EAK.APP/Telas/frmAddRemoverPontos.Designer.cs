@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.PictureBox();
             this.txtObservacao = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.btnRemover = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRemover)).BeginInit();
@@ -80,6 +80,16 @@
             this.panel1.Size = new System.Drawing.Size(627, 448);
             this.panel1.TabIndex = 18;
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BackgroundImage = global::EAK.APP.Properties.Resources.eak2;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Location = new System.Drawing.Point(544, 383);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(80, 62);
+            this.panel8.TabIndex = 42;
+            // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.Transparent;
@@ -98,7 +108,6 @@
             this.txtObservacao.Name = "txtObservacao";
             this.txtObservacao.Size = new System.Drawing.Size(252, 145);
             this.txtObservacao.TabIndex = 33;
-            this.txtObservacao.TextChanged += new System.EventHandler(this.txtObservacao_TextChanged);
             // 
             // label8
             // 
@@ -262,16 +271,6 @@
             this.pictureBox6.TabIndex = 18;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.BackgroundImage = global::EAK.APP.Properties.Resources.eak2;
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel8.Location = new System.Drawing.Point(544, 383);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(80, 62);
-            this.panel8.TabIndex = 42;
             // 
             // Form1
             // 

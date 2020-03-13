@@ -10,26 +10,21 @@ using System.Windows.Forms;
 
 namespace EAK.APP.Telas
 {
-    public partial class frmConsultarPontuacoes : Form
+    public partial class frmMelhoresAlunos : Form
     {
-        public frmConsultarPontuacoes()
+        public frmMelhoresAlunos()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

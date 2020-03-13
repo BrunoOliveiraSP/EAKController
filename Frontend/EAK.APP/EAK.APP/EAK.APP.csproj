@@ -89,17 +89,29 @@
     <Compile Include="Telas\frmLoginProfessor.Designer.cs">
       <DependentUpon>frmLoginProfessor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\frmMelhoresAlunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmMelhoresAlunos.Designer.cs">
+      <DependentUpon>frmMelhoresAlunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmMenuAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmMenuAluno.Designer.cs">
+      <DependentUpon>frmMenuAluno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\frmMenuProfessor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\frmMenuProfessor.Designer.cs">
       <DependentUpon>frmMenuProfessor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\MenuAluno.cs">
+    <Compile Include="Telas\frmRankingTurmas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\MenuAluno.Designer.cs">
-      <DependentUpon>MenuAluno.cs</DependentUpon>
+    <Compile Include="Telas\frmRankingTurmas.Designer.cs">
+      <DependentUpon>frmRankingTurmas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Telas\frmAddRemoverPontos.resx">
       <DependentUpon>frmAddRemoverPontos.cs</DependentUpon>
@@ -126,11 +138,17 @@
     <EmbeddedResource Include="Telas\frmLoginProfessor.resx">
       <DependentUpon>frmLoginProfessor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmMelhoresAlunos.resx">
+      <DependentUpon>frmMelhoresAlunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmMenuAluno.resx">
+      <DependentUpon>frmMenuAluno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\frmMenuProfessor.resx">
       <DependentUpon>frmMenuProfessor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\MenuAluno.resx">
-      <DependentUpon>MenuAluno.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\frmRankingTurmas.resx">
+      <DependentUpon>frmRankingTurmas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -217,6 +235,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eak2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %282%29.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

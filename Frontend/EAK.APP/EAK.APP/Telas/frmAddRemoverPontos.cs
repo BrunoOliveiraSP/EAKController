@@ -35,6 +35,8 @@ namespace EAK.APP
             int pontos = Convert.ToInt32(txtPontos.Text);
             string observacao = txtObservacao.Text;
 
+            
+
             //Business.EakBusiness eakBusiness = new Business.EakBusiness();
             //eakBusiness.AdicionarRemoverPontos(turma, aluno, disciplina, pontos, observacao);
             //
@@ -45,9 +47,6 @@ namespace EAK.APP
             
         }
 
-        private void txtObservacao_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

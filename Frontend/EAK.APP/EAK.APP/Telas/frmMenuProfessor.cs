@@ -16,5 +16,53 @@ namespace EAK.APP.Telas
         {
             InitializeComponent();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            frmMelhoresAlunos tela = new frmMelhoresAlunos();
+            tela.Show();
+
+            Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            frmMelhoresAlunos tela = new frmMelhoresAlunos();
+            tela.Show();
+
+            Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            frmRankingTurmas tela = new frmRankingTurmas();
+            tela.Show();
+
+            Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            frmRankingTurmas tela = new frmRankingTurmas();
+            tela.Show();
+
+            Hide();
+        }
     }
 }
